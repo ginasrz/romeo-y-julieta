@@ -1,0 +1,1 @@
+IMPORTANTE: guardá aquí la imagen elegida de la carpeta Imágenes de la consigna con el nombre verona.jpg (o cambiá el nombre en index.html). Ideal: JPG/WebP optimizado, ancho aproximado 1200 px y peso menor a 500 KB. La página index.html ya contiene texto alternativo (alt).\n

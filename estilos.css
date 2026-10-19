@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+  --fondo: #17151b;
+  --panel: #24202a;
+  --texto: #f3e9dc;
+  --suave: #cbbbaa;
+  --acento: #d7a6a6;
+  --borde: #66505b;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: radial-gradient(ellipse at top, #3a2835 0%, var(--fondo) 58%);
+  color: var(--texto);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+}
+header { text-align: center; padding: 3rem 1.25rem 1.5rem; }
+.cabecera { padding-top: 4rem; }
+.sobrelinea { color: var(--acento); letter-spacing: .22em; text-transform: uppercase; font-size: .76rem; }
+h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.6rem, 7vw, 4.8rem); line-height: 1.05; font-weight: 600; margin: .4rem auto 1rem; max-width: 950px; }
+h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.8rem, 4vw, 2.5rem); line-height: 1.2; color: #f0c9c7; }
+p { font-family: 'Montserrat', sans-serif; font-size: 1rem; color: var(--texto); }
+a { color: var(--acento); font-weight: 600; text-underline-offset: 4px; }
+a:hover, a:focus { color: white; }
+main { width: min(900px, 92%); margin: 0 auto 3rem; }
+article, .multimedia { background: rgba(36,32,42,.88); border: 1px solid var(--borde); border-radius: 14px; padding: clamp(1.3rem, 4vw, 2.5rem); margin: 1.5rem 0; box-shadow: 0 18px 50px #0003; }
+.portada { margin: 1rem 0 2rem; }
+.portada img { width: 100%; max-height: 420px; object-fit: cover; display: block; border-radius: 12px; border: 1px solid var(--borde); }
+figcaption { color: var(--suave); font-size: .82rem; padding-top: .5rem; }
+.opciones { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1.8rem; }
+.opciones a { display: inline-block; padding: .75rem 1rem; border: 1px solid var(--acento); border-radius: 7px; text-decoration: none; transition: background .2s ease; }
+.opciones a:hover { background: #684653; }
+.video { position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 10px; }
+.video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+footer { text-align: center; padding: 1.5rem 1rem 2.5rem; color: var(--suave); border-top: 1px solid #ffffff1a; }
+footer p { color: var(--suave); font-size: .85rem; }
+@media (max-width: 600px) { header { padding-top: 2rem; } .opciones { flex-direction: column; } .opciones a { text-align: center; } }
